@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/white"
+    tools:context=".RegisterTutor">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_marginBottom="60dp"
+           android:layout_height="match_parent">
+
+           <ImageView
+                android:id="@+id/imageView"
+               android:layout_width="226dp"
+               android:layout_height="238dp"
+               android:layout_alignParentEnd="true"
+               android:src="@drawable/udaanlogo"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.497"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <TextView
+               android:id="@+id/textView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="28dp"
+               android:text="Welcome to Udaan "
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:textSize="21dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+           <EditText
+               android:id="@+id/usernameEditText"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="36dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint="Enter Name"
+               android:inputType="text"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView"
+               app:layout_constraintVertical_bias="0.046" />
+
+           <EditText
+               android:id="@+id/passwordEditText"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="60dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint="Password"
+               android:inputType="textPassword"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+
+           <EditText
+               android:id="@+id/confirmpassword"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="68dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint="Confirm password"
+               android:inputType="textPassword"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+<!--           <EditText-->
+<!--               android:id="@+id/locationEdittext"-->
+<!--               android:layout_width="301dp"-->
+<!--               android:layout_height="60dp"-->
+<!--               android:layout_marginTop="60dp"-->
+<!--               android:background="@drawable/rectangle1"-->
+<!--               android:ems="10"-->
+<!--               android:hint="Enter Location"-->
+<!--               android:inputType="textPassword"-->
+<!--               android:paddingLeft="10dp"-->
+<!--               android:textColor="@color/black"-->
+<!--               android:textColorHint="@color/black"-->
+<!--               app:layout_constraintEnd_toEndOf="parent"-->
+<!--               app:layout_constraintStart_toStartOf="parent"-->
+<!--               app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />-->
+           <AutoCompleteTextView
+               android:id="@+id/locationEdittext"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/rectangle1"
+               android:completionThreshold="1"
+               android:ems="10"
+               android:hint="Search place..."
+               android:padding="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.495"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/confirmpassword"
+               app:layout_constraintVertical_bias="0.053" />
+
+           <EditText
+               android:id="@+id/pincodeEdittext"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="60dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint="Enter Pincode"
+               android:inputType="number"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/locationEdittext" />
+
+<!--           <EditText-->
+<!--               android:id="@+id/gender"-->
+<!--               android:layout_width="301dp"-->
+<!--               android:layout_height="60dp"-->
+<!--               android:layout_marginTop="60dp"-->
+<!--               android:background="@drawable/rectangle1"-->
+<!--               android:ems="10"-->
+<!--               android:hint="gender"-->
+<!--               android:inputType="textPassword"-->
+<!--               android:paddingLeft="10dp"-->
+<!--               android:textColor="@color/black"-->
+<!--               android:textColorHint="@color/black"-->
+<!--               app:layout_constraintEnd_toEndOf="parent"-->
+<!--               app:layout_constraintStart_toStartOf="parent"-->
+<!--               app:layout_constraintTop_toBottomOf="@+id/pincodeEdittext" />-->
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Choose Gender"
+               android:layout_marginTop="60dp"
+               android:layout_marginBottom="20dp"
+               android:textSize="15dp"
+               android:textColor="@color/black"
+               android:textFontWeight="@integer/material_motion_duration_medium_1"
+               app:layout_constraintTop_toBottomOf="@+id/pincodeEdittext"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               />
+           <RadioGroup
+               android:id="@+id/genderGroup"
+               android:layout_width="wrap_content"
+               android:layout_marginTop="80dp"
+               android:outlineSpotShadowColor="@color/black"
+                android:layout_height="wrap_content"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/pincodeEdittext"
+               android:orientation="horizontal">
+
+               <RadioButton
+                   android:id="@+id/radioMale"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingRight="15dp"
+                   android:text="Male" />
+
+               <RadioButton
+                   android:id="@+id/radioFemale"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Female" />
+
+           </RadioGroup>
+           <EditText
+               android:id="@+id/education"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="60dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint="Education"
+               android:inputType="text"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/genderGroup" />
+
+
+
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/chooseImage"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="60dp"
+               app:cornerRadius="5dp"
+               android:backgroundTint="#7CC9F2"
+               android:text="Choose Profile photo"
+               android:paddingLeft="10dp"
+               android:textColor="@color/white"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/education" />
+
+           <ImageView
+               android:id="@+id/imageview2"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               app:circularflow_defaultRadius="@dimen/cardview_default_radius"
+               android:layout_marginTop="48dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.819"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/chooseImage" />
+
+           <EditText
+               android:id="@+id/addressEdittext"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="60dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint="address"
+               android:inputType="text"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/imageview2" />
+
+           <EditText
+               android:id="@+id/email"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="60dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint="email"
+               android:inputType="textEmailAddress"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/addressEdittext" />
+
+           <EditText
+               android:id="@+id/phonenumber"
+               android:layout_width="301dp"
+               android:layout_height="60dp"
+               android:layout_marginTop="60dp"
+               android:layout_marginBottom="160dp"
+               android:background="@drawable/rectangle1"
+               android:ems="10"
+               android:hint= " Enter Mobile number"
+               android:inputType="number"
+               android:paddingLeft="10dp"
+               android:textColor="@color/black"
+               android:textColorHint="@color/black"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/email" />
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/registerBtn"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:padding="15dp"
+               android:text="Register"
+               android:textSize="21dp"
+               app:cornerRadius="5dp"
+               android:textColor="@color/white"
+               android:layout_marginTop="32dp"
+               android:layout_marginBottom="60dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.498"
+               app:layout_constraintStart_toStartOf="parent"
+               android:backgroundTint="#7CC9F2"
+               app:layout_constraintTop_toBottomOf="@+id/phonenumber">
+
+           </com.google.android.material.button.MaterialButton>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

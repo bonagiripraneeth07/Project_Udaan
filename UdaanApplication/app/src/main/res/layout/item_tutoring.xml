@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+         android:padding="16dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tutorName"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/tutorIdTextView"-->
+<!--            android:text="tutorID"-->
+<!--            android:textSize="18dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:id="@+id/preferredtimeTextView"
+            android:text="Preferred Time "
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/postedDate"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-40dp"
+            android:text="Posted Date "
+            android:textSize="18dp"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Subjects"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tutorId"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/moreDetailsButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cornerRadius="5dp"
+            android:textColor="@color/white"
+             android:backgroundTint="#4366E1"
+            android:textSize="21dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="More Details"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

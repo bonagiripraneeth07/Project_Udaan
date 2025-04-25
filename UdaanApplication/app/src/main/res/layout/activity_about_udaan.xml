@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutUdaan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="226dp"
+            android:layout_height="238dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="89dp"
+            android:layout_marginEnd="96dp"
+            android:src="@drawable/udaanlogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imageView"
+            android:text="About Udaan"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/firstHalf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/imageView"
+            android:textStyle="italic"
+            android:padding="10dp"
+            android:text="Udaan is more than just an app – it's a movement toward a brighter future for the children of daily laborers across the country.
+Every day, we see hardworking laborers traveling from city to city with their families, striving to make ends meet. In the midst of their struggle, the education of their children often takes a back seat. Constant relocation, financial hardship, and lack of access to nearby schools make it nearly impossible for them to provide consistent education.     "
+            />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/secondHalf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstHalf"
+            android:layout_marginTop="5dp"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:text="Udaan bridges this gap.
+Our platform connects generous and passionate tutors who are willing to provide free education during their spare time with parents who are looking for opportunities to educate their children. Tutors can register on Udaan by providing their location, subjects, and preferred timings. On the other end, parents can browse through available tutors in their area, view their details, and choose the best fit for their child based on time, subjects, and location.
+
+Whether it's a call for more information or direct guidance via maps, Udaan empowers families to take the first step towards giving their children the future they deserve.
+
+With Udaan, we aim to ensure that no child is denied the right to learn – no matter where they come from or how often they move."/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="21dp"
+            android:textColor="@color/white"
+            app:cornerRadius="5dp"
+            android:backgroundTint="#7CC9F2"
+            android:layout_below="@+id/secondHalf"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="27dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Next" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
